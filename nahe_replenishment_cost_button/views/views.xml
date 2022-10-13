@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="nahe_res_currency_rate_tree_button">
+        <field name="name">nahe.res.currency.rate.tree.button</field>
+        <field name="model">res.currency.rate</field>
+        <field name="inherit_id" ref="base.view_currency_rate_tree"/>
+        <field name="arch" type="xml">
+        <field name="inverse_rate" position="after">
+            <button name="action_update_replenishment_cost" type="object" string="Actualizar costos contables"/>
+        </field>
+        </field>
+    </record>
+  </data>
+</odoo>
+
